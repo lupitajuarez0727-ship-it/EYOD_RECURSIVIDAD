@@ -50,7 +50,7 @@ public class InvertirOrden_Arreglo {
         }
 
         // Method to read the next token as a double
-        double nextDouble() { 
+        double nextDouble() {
             return Double.parseDouble(next()); 
         }
 
