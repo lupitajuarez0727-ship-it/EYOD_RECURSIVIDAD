@@ -7,7 +7,8 @@ import java.util.StringTokenizer;
 
 public class InvertirOrden_Arreglo {
     // FastReader class for efficient input
-    int numero;
+    int n;
+    int[] data;
     FastReader reader = new FastReader();
 
     static class FastReader {
@@ -70,7 +71,12 @@ public class InvertirOrden_Arreglo {
     }
 
     public void leerDatos() {
-        numero = reader.nextInt();
+        n = reader.nextInt();
+        data = new int[n];
+
+        for(int i = 0; i < n; i++){
+            data[i] = reader.nextInt();
+        }
     }
 
     public void resuelve() {
