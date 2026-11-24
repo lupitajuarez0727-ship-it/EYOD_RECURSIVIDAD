@@ -81,8 +81,14 @@ public class InvertirOrden_Arreglo {
 
     public void resuelve() {
         // TODO
-        int resultado = numero * 2 + 1;
-        System.out.println(resultado);
+        System.out.println("Antes");
+        mostrarArreglo(data);
+        reverseArray(data, 0, n - 1);
+        System.out.println("Despues");
+        mostrarArreglo(data);
+    }
+    public void reverseArray(int[] data, int low, int high){
+        if(low)
     }
 
     public static void main(String[] args) {
