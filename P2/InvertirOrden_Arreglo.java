@@ -98,6 +98,17 @@ public class InvertirOrden_Arreglo {
         }
     }
 
+    public void mostrarArreglo(int[] datos){
+        StringBuilder sb = new StringBuilder("[");
+
+        for(int i = 0; i < datos.length; i++){
+            sb.append(datos[i]);
+            if(i < datos.length - 1) sb.append(", ");
+        }
+        sb.append("[");
+        System.out.println(sb);
+    }
+
     public static void main(String[] args) {
         InvertirOrden_Arreglo id  = new InvertirOrden_Arreglo();
 
