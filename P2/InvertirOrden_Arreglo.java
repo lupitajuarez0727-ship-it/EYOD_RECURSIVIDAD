@@ -87,8 +87,15 @@ public class InvertirOrden_Arreglo {
         System.out.println("Despues");
         mostrarArreglo(data);
     }
+    //Metodo recursivo
     public void reverseArray(int[] data, int low, int high){
-        if(low)
+        if(low < high){
+            int temp = data[low];
+            data[low] = data[high];
+            data[high] = temp;
+            reverseArray(data, low + 1, high - 1);
+
+        }
     }
 
     public static void main(String[] args) {
